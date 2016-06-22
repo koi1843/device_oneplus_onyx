@@ -108,6 +108,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service.onyx \
+    camera.msm8974 \
     libshims_atomic \
     libshims_camera
 
