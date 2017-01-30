@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     camera.device@1.0-impl
 
+# Disable camera Treble path
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_treble=true
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
