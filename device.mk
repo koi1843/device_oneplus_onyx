@@ -280,7 +280,8 @@ PRODUCT_PACKAGES += \
     hostapd.deny
 
 PRODUCT_PACKAGES += \
-    wcnss_service
+    wcnss_service \
+    wificond
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
