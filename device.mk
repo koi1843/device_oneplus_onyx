@@ -99,12 +99,24 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
     libboringssl-compat \
     libstlport \
     Snap
+
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@1.0-impl
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
 
 # Data
 PRODUCT_PACKAGES += \
@@ -122,9 +134,18 @@ PRODUCT_PACKAGES += \
     memtrack.msm8974 \
     liboverlay
 
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.memtrack@1.0-impl
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8974
+
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
@@ -151,6 +172,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.msm8974
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
@@ -159,6 +184,9 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8974
+
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl
 
 # Limit dex2oat threads to improve thermals
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -198,6 +226,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8974
 
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl
+
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
@@ -209,6 +240,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libshims_sensors
+
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
 
 # Weather providers
 PRODUCT_PACKAGES += \
@@ -240,6 +278,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     wcnss_service
+
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
