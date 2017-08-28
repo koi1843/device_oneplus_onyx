@@ -101,7 +101,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@2.0-impl
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -143,6 +147,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -238,6 +245,9 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     libxml2
 
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0-impl
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf
@@ -261,6 +271,9 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
 
 # WiFi
 PRODUCT_COPY_FILES += \
