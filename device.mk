@@ -110,7 +110,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service.onyx \
     camera.msm8974 \
     libshims_atomic \
-    libshims_camera
+    libshims_camera \
+    libshims_parameters
 
 # Bluetooth
 PRODUCT_PACKAGES += \
