@@ -271,6 +271,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=2m \
     dalvik.vm.heapmaxfree=8m
 
+# Treble
+PRODUCT_PACKAGES += \
+    vndk-sp \
+
 # HIDL HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
