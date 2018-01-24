@@ -168,6 +168,10 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+    textclassifier.smartselection.bundle1
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8974
