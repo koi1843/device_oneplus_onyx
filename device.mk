@@ -205,10 +205,6 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libtinyxml
 
-# Power
-PRODUCT_PACKAGES += \
-    power.msm8974
-
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
