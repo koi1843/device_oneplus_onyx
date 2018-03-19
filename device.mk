@@ -102,11 +102,10 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8974 \
-    libboringssl-compat \
-    libstlport \
     libshims_atomic \
-    Snap
+    libshims_camera \
+    libshims_parameters \
+    libstlport
 
 # OnyxParts
 PRODUCT_PACKAGES += \
