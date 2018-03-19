@@ -87,7 +87,7 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
@@ -183,7 +183,6 @@ TARGET_RIL_VARIANT := caf
 
 # SHIMS
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
     /system/lib/libgui.so|libshims_sensors.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshims_atomic.so
 
