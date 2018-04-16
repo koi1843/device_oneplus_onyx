@@ -161,6 +161,9 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 # RIL
 TARGET_RIL_VARIANT := caf
 
+# Treble
+TARGET_COPY_OUT_VENDOR := vendor
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 include device/qcom/sepolicy/legacy-sepolicy.mk
@@ -170,9 +173,9 @@ BOARD_SEPOLICY_DIRS += \
 
 # SHIMS
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
+    /vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
     /system/lib/libgui.so|libshims_sensors.so \
-    /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshims_atomic.so
+    /vendor/lib/libmmcamera2_stats_algorithm.so|libshims_atomic.so
 
 # SnapDragon LLVM Compiler
 TARGET_USE_SDCLANG := true
