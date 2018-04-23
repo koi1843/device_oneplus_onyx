@@ -111,10 +111,6 @@ PRODUCT_PACKAGES += \
     libshims_atomic \
     Snap
 
-# Disable camera Treble path
-PRODUCT_PROPERTY_OVERRIDES += \
-    camera.disable_treble=true
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
