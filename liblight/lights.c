@@ -2,6 +2,7 @@
  * Copyright (C) 2008 The Android Open Source Project
  * Copyright (C) 2014 The Linux Foundation. All rights reserved.
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -218,7 +219,8 @@ set_speaker_light_locked(struct light_device_t* dev,
 {
     int red, green, blue, blink;
     int onMS, offMS, stepDuration, pauseHi;
-    unsigned int colorRGB;
+    unsigned int alpha;
+    unsigned int colorRGB = state->color;
     char *duty;
 
     if(!dev) {
@@ -237,14 +239,24 @@ set_speaker_light_locked(struct light_device_t* dev,
             break;
     }
 
-    colorRGB = state->color;
-
     ALOGV("set_speaker_light_locked mode %d, colorRGB=%08X, onMS=%d, offMS=%d\n",
             state->flashMode, colorRGB, onMS, offMS);
 
-    red = (colorRGB >> 16) & 0xFF;
-    green = (colorRGB >> 8) & 0xFF;
-    blue = colorRGB & 0xFF;
+    // Extract brightness from AARRGGBB
+    alpha = (colorRGB >> 24) & 0xff;
+
+    // Retrieve each of the RGB colors
+    red = (colorRGB >> 16) & 0xff;
+    green = (colorRGB >> 8) & 0xff;
+    blue = colorRGB & 0xff;
+
+    // Scale RGB colors if a brightness has been applied by the user
+    if (alpha != 0xff) {
+        red = (red * alpha) / 0xff;
+        green = (green * alpha) / 0xff;
+        blue = (blue * alpha) / 0xff;
+    }
+
     blink = onMS > 0 && offMS > 0;
 
     // disable all blinking to start
