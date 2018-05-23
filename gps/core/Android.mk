@@ -11,6 +11,7 @@ LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils \
     libcutils \
+    libhardware \
     libgps.utils \
     libdl
 
