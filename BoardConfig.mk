@@ -185,7 +185,6 @@ TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 # SHIMS
 TARGET_LD_SHIM_LIBS := \
     /vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
-    /system/lib/libgui.so|libshims_sensors.so \
     /vendor/lib/libmmcamera2_stats_algorithm.so|libshims_atomic.so
 
 # SnapDragon LLVM Compiler
