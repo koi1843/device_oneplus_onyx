@@ -59,6 +59,8 @@ LOCAL_COPY_HEADERS:= \
 
 LOCAL_MODULE := libgps.utils
 
+LOCAL_VENDOR_MODULE := true
+
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_PRELINK_MODULE := false
