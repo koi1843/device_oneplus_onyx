@@ -37,12 +37,19 @@ EXTRA_VENDOR_LIBRARIES := \
     libbinder
 
 EXTRA_VENDOR_LIBRARIES += \
+    libandroid \
+    libandroid_runtime \
+    libandroid_servers \
+    libandroidfw \
+    libsensor \
     libsqlite \
     libmedia \
     libxml2 \
     libicuuc \
     libicui18n \
+    libinput \
     libsonivox \
+    libstdc++ \
     libcamera_client \
     libaudioclient \
     libmedia_helper \
@@ -50,7 +57,9 @@ EXTRA_VENDOR_LIBRARIES += \
     libmediadrm \
     libaudiomanager \
     libmemunreachable \
-    libmediautils
+    libmediautils \
+    libnetd_client \
+    libnetutils
 
 #-------------------------------------------------------------------------------
 # VNDK Modules
