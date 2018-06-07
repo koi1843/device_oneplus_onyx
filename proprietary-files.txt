@@ -10,7 +10,7 @@ bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 
 # Audio
-etc/firmware/tfa98xx.cnt
+etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
