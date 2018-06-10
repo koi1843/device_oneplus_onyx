@@ -251,6 +251,10 @@ PRODUCT_PACKAGES += \
     wcnss_service \
     wificond
 
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2016-11-10
+
 # HIDL HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
