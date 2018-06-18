@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
     libshims_atomic \
     Snap
 
+# OnyxParts
+PRODUCT_PACKAGES += \
+    OnyxParts
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
