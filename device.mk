@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
     libshims_atomic \
     Snap
 
+# OnyxParts
+PRODUCT_PACKAGES += \
+    OnyxParts
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor

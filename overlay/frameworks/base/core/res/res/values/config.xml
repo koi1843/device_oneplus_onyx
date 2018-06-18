@@ -153,6 +153,13 @@
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
+    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
+        delimited by File.pathSeparator, which defaults to ":" on Android -->
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/OnyxParts/OnyxParts.apk</string>
+    <!-- Full qualified name of the class that implements
+        com.android.internal.os.DeviceKeyHandler interface. -->
+    <string name="config_deviceKeyHandlerClass" translatable="false">org.omnirom.device.KeyHandler</string>
+
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
 
@@ -249,7 +256,7 @@
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
     <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">true</bool>
+    <bool name="config_supportDoubleTapWake">false</bool>
 
     <string-array name="config_mobile_tcp_buffers">
         <item>"lte:2097152,4194304,8388608,262144,524288,1048576"</item>
