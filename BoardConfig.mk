@@ -96,6 +96,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Enable dexpreopt to speed boot time
@@ -159,9 +160,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
-
-# Power
-TARGET_POWERHAL_VARIANT := none
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
