@@ -18,8 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-	$(LOCAL_PATH)/overlay \
-	$(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
@@ -226,12 +225,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshims_sensors
 
-# Weather providers
-PRODUCT_PACKAGES += \
-    OpenWeatherMapWeatherProvider \
-    YahooWeatherProvider \
-    WundergroundWeatherProvider
-
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
@@ -270,6 +263,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # HIDL HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
-
-# Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
