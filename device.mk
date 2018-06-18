@@ -169,6 +169,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.msm8974
+
 # Limit dex2oat threads to improve thermals
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=2 \

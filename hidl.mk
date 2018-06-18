@@ -43,7 +43,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.onyx
+    android.hardware.light@2.0-impl
 
 # Power
 PRODUCT_PACKAGES += \
