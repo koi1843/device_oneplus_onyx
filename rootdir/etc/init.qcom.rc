@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+import /init.omni.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.qcom.power.rc
 

@@ -3,7 +3,6 @@
 #
 
 ro.prj_name=15055
-lineage.updater.uri=https://raw.githubusercontent.com/YumeMichi/LineageOTA/master/api.json
 
 # RIL
 DEVICE_PROVISIONED=1
