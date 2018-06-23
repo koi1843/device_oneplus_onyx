@@ -19,11 +19,7 @@ $(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-	$(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
