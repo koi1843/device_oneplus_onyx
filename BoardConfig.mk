@@ -95,6 +95,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
+# Browser
+TARGET_USES_AOSP_BROWSER := true
+
 # Power
 TARGET_PROVIDES_POWERHAL := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"

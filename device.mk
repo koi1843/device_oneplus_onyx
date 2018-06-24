@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OnyxParts
 
+# Jelly
+PRODUCT_PACKAGES += \
+    Jelly
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
