@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8974
 
+# Charger
+PRODUCT_PACKAGES += \
+    omni_charger_res_images
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_oppo
