@@ -265,3 +265,6 @@ PRODUCT_PACKAGES += \
 
 # HIDL HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
+
+# GApps
+$(call inherit-product-if-exists, vendor/gapps/arm/arm-vendor.mk)
