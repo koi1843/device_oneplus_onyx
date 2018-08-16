@@ -65,6 +65,8 @@ void vendor_load_properties()
 
     rf_version = GetProperty("ro.boot.rf_version", "");
 
+    property_override_dual("ro.product.device", "ro.vendor.product.device", "OnePlus");
+
     if (rf_version == "101") {
         /* China */
         property_override_dual("ro.product.model", "ro.vendor.product.model", "ONE E1001");
