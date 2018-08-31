@@ -66,6 +66,8 @@ void vendor_load_properties()
     rf_version = GetProperty("ro.boot.rf_version", "");
 
     property_override_dual("ro.product.device", "ro.vendor.product.device", "OnePlus");
+    // Init a dummy BT MAC address, will be overwritten later
+    property_set("ro.boot.btmacaddr", "00:00:00:00:00:00");
 
     if (rf_version == "101") {
         /* China */
