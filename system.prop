@@ -46,7 +46,6 @@ vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.gapless.enabled=true
 
 # Bluetooth
-qcom.bluetooth.soc=smd
 ro.bluetooth.dun=false
 ro.bluetooth.hfp.ver=1.7
 ro.bluetooth.sap=false

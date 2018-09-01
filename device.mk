@@ -184,8 +184,9 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \

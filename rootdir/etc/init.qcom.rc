@@ -337,10 +337,10 @@ on late-fs
 
     mount_all /vendor/etc/fstab.qcom --late
 
-on property:hw.fm.init=1
+on property:vendor.hw.fm.init=1
     write /sys/module/radio_iris_transport/parameters/fmsmd_set 1
 
-on property:hw.fm.init=0
+on property:vendor.hw.fm.init=0
     write /sys/module/radio_iris_transport/parameters/fmsmd_set 0
 
 # Logcat
