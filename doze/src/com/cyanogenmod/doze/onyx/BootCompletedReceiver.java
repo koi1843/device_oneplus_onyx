@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.lineageos.doze.onyx;
+package com.cyanogenmod.doze.onyx;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

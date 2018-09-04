@@ -12,7 +12,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRIVATE_PLATFORM_APIS := true
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    org.lineageos.platform.internal
+    org.cyanogenmod.platform.internal
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 

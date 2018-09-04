@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.lineageos.doze.onyx;
+package com.cyanogenmod.doze.onyx;
 
-import org.lineageos.internal.util.ScreenType;
+import org.cyanogenmod.internal.util.ScreenType;
 
 import android.app.ActionBar;
 import android.os.Bundle;
