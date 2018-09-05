@@ -113,6 +113,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# Charger
+WITH_LINEAGE_CHARGER := false
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Data
 PRODUCT_PACKAGES += \
     librmnetctl
