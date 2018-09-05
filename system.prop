@@ -28,6 +28,7 @@ ro.qualcomm.bt.hci_transport=smd
 vendor.qcom.bluetooth.soc=pronto
 
 # Camera
+camera.shutter_sound.blacklist=com.oneplus.camera
 camera2.portability.force_api=1
 persist.camera.cpp.duplication=false
 media.stagefright.legacyencoder=true
