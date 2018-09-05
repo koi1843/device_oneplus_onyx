@@ -118,6 +118,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     libbt-vendor
 
+# Charger
+WITH_LINEAGE_CHARGER := false
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Data
 PRODUCT_PACKAGES += \
     librmnetctl
