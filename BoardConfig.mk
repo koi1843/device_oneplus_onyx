@@ -176,6 +176,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 
 # RIL
+DISABLE_RILD_OEM_HOOK := false
 TARGET_RIL_VARIANT := caf
 
 # SELinux
