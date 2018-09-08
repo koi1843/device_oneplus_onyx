@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk
 $(call inherit-product, device/oneplus/onyx/device.mk)
 
 # Inherit common AOSP stuff.
-$(call inherit-product, vendor/aosp/config.mk)
+$(call inherit-product, vendor/lemon/config.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/oneplus/onyx/onyx-vendor.mk)
